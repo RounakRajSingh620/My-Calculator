@@ -25,3 +25,35 @@ form input{
     text-align: right;
     pointer-events: none;
 }
+.Buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+button{
+    flex: 0 0 22%;
+    margin: 5px 0;
+    border: 2px solid black;
+    width: 60px;
+    height: 50px;
+    font-size: 30px;
+    font-weight: 700
+    border-radius:5px;
+    cursor: pointer;
+}
+.operators{
+    background:rgb(61, 173, 164);
+    color: aliceblue;
+}
+.operands{
+    background-color: aquamarine;
+    color:crimson;
+}
+.operands_equal{
+    background-color: rgb(161, 212, 84);
+    color: rgb(43, 39, 39);
+}
+.operands_clear{
+    background-color: red;
+}
