@@ -25,7 +25,7 @@ function evaluateBtn() {
   screen.value = '' + ans;
 }
 
-document.addEventListener("keydown",(event)=>{
-  if(event.key=='=')
-})
+// document.addEventListener("keydown",(event)=>{
+//   if(event.key=='=')
+// })
 
