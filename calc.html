@@ -17,30 +17,29 @@
 
         <div class="Buttons">
 
-            <button type="button" class="cal operands" data-num="9">9</button>
-            <button type="button" class="cal operands" data-num="8">8</button>
-            <button type="button" class="cal operands" data-num="7">7</button>
-            <button type="button" class="cal operators" data-num="*">*</button>
-            <button type="button" class="cal operands" data-num="6">6</button>
-            <button type="button" class="cal operands" data-num="5">5</button>
-            <button type="button" class="cal operands" data-num="4">4</button>
-            <button type="button" class="cal operators" data-num="/">/</button>
-            <button type="button" class="cal operands" data-num="3">3</button>
-            <button type="button" class="cal operands" data-num="2">2</button>
-            <button type="button" class="cal operands" data-num="1">1</button>
-            <button type="button" class="cal operators" data-num="-">-</button>
-            <button type="button" class="cal operands" data-num="00">00</button>
-            <button type="button" class="cal operands" data-num="0">0</button>
-            <button type="button" class="cal operands" data-num=".">.</button>
-            <button type="button" class="cal operators" data-num="+">+</button>
-            <button type="button" class="cal operands_clear">C</button>
-            <button type="button" class="cal operands_equal">=</button>
-
-
-
+            <button type="button" class="cal operands" onclick='numButton("9")'>9</button>
+            <button type="button" class="cal operands" onclick='numButton("8")'>8</button>
+            <button type="button" class="cal operands" onclick='numButton("7")'>7</button>
+            <button type="button" class="cal operators" onclick='numButton("*")'>*</button>
+            <button type="button" class="cal operands" onclick='numButton("6")'>6</button>
+            <button type="button" class="cal operands" onclick='numButton("5")'>5</button>
+            <button type="button" class="cal operands" onclick='numButton("4")'>4</button>
+            <button type="button" class="cal operators" onclick='numButton("/")'>/</button>
+            <button type="button" class="cal operands" onclick='numButton("3")'>3</button>
+            <button type="button" class="cal operands" onclick='numButton("2")'>2</button>
+            <button type="button" class="cal operands" onclick='numButton("1")'>1</button>
+            <button type="button" class="cal operators" onclick='numButton("-")'>-</buttQon>
+                <button type="button" class="cal operands" onclick='numButton("0")'>0</button>
+                <button type="button" class="cal operands" onclick='numButton(".")'>.</button>
+                <button type="button" class="cal operators" onclick='numButton("%")'>%</button> 
+                <button type="button"  class="cal operators" onclick='numButton("+")'>+</button>
+                <button type="button" class="cal operands_clear" onclick="clearBtn()" ondblclick="clearAll()">C</button>
+                <button type="button" class="cal operands_equal" onclick="evaluateBtn()">=</button>
+                <button type="button" class="cal operators" onclick='numButton("(")'>(</button>
+                <button type="button" class="cal operators" onclick='numButton(")")'>)</button>
         </div>
     </section>
-<script src="calc.js"></script>
+    <script src="calc.js"></script>
 </body>
 
 </html>

@@ -1,63 +1,84 @@
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     background: #efeff2;
 }
-.Calculator{
+
+.Calculator {
     width: 300px;
     height: 500px;
-    box-shadow: 5px 5px 40px rgba(0, 0,0, .3);
+    box-shadow: 5px 5px 40px rgba(0, 0, 0, .3);
     background-color: #3d4141;
     overflow: hidden;
     border-radius: 20px;
 }
-form input{
+
+form input {
     width: 100%;
     height: 150px;
     border: none;
     border-radius: 20px;
     font-size: 45px;
-   
+
     color: rgb(250, 60, 60);
     background: black;
     text-align: right;
     pointer-events: none;
 }
-.Buttons{
+
+.Buttons {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 20px;
 }
-button{
+
+button {
     flex: 0 0 22%;
     margin: 5px 0;
     border: 2px solid black;
     width: 60px;
     height: 50px;
     font-size: 30px;
-    font-weight: 700
-    border-radius:5px;
-    cursor: pointer;
+    font-weight: 700;
+    border-radius: 5px;
+
 }
-.operators{
-    background:rgb(61, 173, 164);
-    color:alicebluer ;
+
+button:hover{
+    cursor: pointer;
+    border: 2px solid limegreen;
+    box-shadow: 2px 2px blueviolet;
+    transform: translate(0, -5px);
+}
+
+button:active{
+    border: 2px solid red;
+    box-shadow: 2px 2px maroon;
+    transform: translate(0, 7px);
+}
+
+.operators {
+    background: rgb(61, 173, 164);
+    color: alicebluer;
     border-radius: 100px;
 }
-.operands{
+
+.operands {
     background-color: aquamarine;
-    color:crimson;
+    color: crimson;
     border-radius: 20px;
 }
-.operands_equal{
+
+.operands_equal {
     background-color: rgb(161, 212, 84);
     color: rgb(43, 39, 39);
     border-radius: 80px;
 }
-.operands_clear{
+
+.operands_clear {
     background-color: red;
     border-radius: 40px;
 }

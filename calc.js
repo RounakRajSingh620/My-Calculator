@@ -1,29 +1,31 @@
+const screen = document.querySelector('.screen');
+const buttons = document.querySelectorAll('.cal');
+const clear = document.querySelector('.operands_clear');
+const equal = document.querySelector('.operands_equal');
 
+function numButton(x) {
+  screen.value += x;
+}
+function clearBtn() {
+  let sval = screen.value;
+  screen.value = sval.slice(0, sval.length - 1);
+}
+function clearAll() {
+  screen.value = "";
+}
+function evaluateBtn() {
+  let expr = screen.value;
+  let ans;
+  try {
+    ans = eval(expr);
+  }
+  catch (x) {
+    ans = "und";
+  }
+  screen.value = '' + ans;
+}
 
-
-(function () {
-  let screen = document.querySelector('.screen');
-  let buttons = document.querySelectorAll('.cal');
-  let clear = document.querySelector('.operands_clear');
-  let equal = document.querySelector('.operands_equal');
-
-  buttons.forEach(function (button) {
-    button.addEventListener('click', function (e) {
-      let value = e.target.dataset.num;
-      screen.value += value;
-    })
-  });
-  equal.addEventListener('click', function (e) {
-  if (screen.value === '') {
-      screen.value = "Please enter";
-    } else { 
-      let answer = eval(screen.value);
-      screen.value = answer;
-    }
-  });
- clear.addEventListener('click',function (e){
-    screen.value=answer;
-  })
-
-})();
+document.addEventListener("keydown",(event)=>{
+  if(event.key=='=')
+})
 
