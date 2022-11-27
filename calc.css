@@ -4,6 +4,9 @@ body {
     align-items: center;
     min-height: 100vh;
     background: #efeff2;
+    background: url(https://media.istockphoto.com/id/1305511217/photo/maths.jpg?s=612x612&w=is&k=20&c=FUQiPzVtHw5BSVth9AHlDO1F2b_myKYicNFRUIEuzec=);
+
+    background-size: cover;
 }
 
 .Calculator {
@@ -22,7 +25,7 @@ form input {
     border-radius: 20px;
     font-size: 45px;
 
-    color: rgb(250, 60, 60);
+    color: whitesmoke;
     background: black;
     text-align: right;
     pointer-events: none;
