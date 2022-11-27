@@ -47,14 +47,14 @@ button {
 
 }
 
-button:hover{
+button:hover {
     cursor: pointer;
     border: 2px solid limegreen;
     box-shadow: 2px 2px blueviolet;
     transform: translate(0, -5px);
 }
 
-button:active{
+button:active {
     border: 2px solid red;
     box-shadow: 2px 2px maroon;
     transform: translate(0, 7px);
